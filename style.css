@@ -90,16 +90,20 @@ div.head{
     div.content{
         display: block;
         width: auto;     
+        text-align: center;
     }
 
     i{
         margin:0px 20px;
+       padding: 0px 15px;
+      
     }
 
      input{
+        
          text-align: center;
          width: auto;
-         
+         padding:5px 5px;
      }
     
     
