@@ -86,3 +86,21 @@ div.head{
     margin: auto;
 }
 
+@media screen and (max-width:400px) {
+    div.content{
+        display: block;
+        width: auto;     
+    }
+
+    i{
+        margin:0px 20px;
+    }
+
+     input{
+         text-align: center;
+         width: auto;
+         
+     }
+    
+    
+}
