@@ -28,6 +28,19 @@ form{
     
     /* border:1px solid rgb(22, 21, 21); */
 }
+div.form{
+    margin:auto;
+    /* margin-top:100px; */
+    
+    max-width:400px;
+    
+    background-color: blanchedalmond;
+    opacity: 72%;
+    padding: 15px;
+   
+    
+    /* border:1px solid rgb(22, 21, 21); */
+}
 
 input{
 

@@ -9,28 +9,46 @@
     <script src="https://kit.fontawesome.com/3f7c31d0ad.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="head"><img src="/logo.png" alt="logo"></div>
-    <form action="">
+    <div class="head"><img src="logo.png" alt="logo"></div>
+    <form    method="post"  name="log"  >
         <div class="content"><h2>Login</h2></div>
      <div class="content">
        <i class="fas fa-user"></i>  
-      <input type="name" name="name" id="" placeholder="Name">
+      <input type="name" name="userName"  placeholder="Name">
      </div>
      <div class="content">
          <i class="fas fa-envelope"></i>
-        <input type="email" name="email" id="" placeholder="Email">
+        <input type="email" name="userMail"  placeholder="email">
        </div>
        <div class="content">
         <i class="fas fa-key"></i> 
-        <input type="password" name="password" id="" placeholder="Password">
+        <input type="password" name="userPassword" id="password" placeholder="Password">
        </div>
        
-       <button class="btn">Login</button>
+       <input type="button" value="Login"  onclick="myfunction()"  >
+       <!-- <button class="btn"  type="button"  onclick="myfunction()" >Login</button>  -->
        <div class="cont">OR</div>
-       <button class="btn" >  <a href="/register.html">Register</a> </button>
+       <button class="btn" >  <a href="./register.html">Register</a> </button>
        
 
     </form>
+     <script>
+      
+      function myfunction(){
+         var nam=document.forms['log']['userName'].value;
+         var maill=document.forms["log"]["userMail"].value;
+         var pass=document.forms["log"]["userPassword"].value;
+       
+         if (nam=="robin" && maill=="grobin578@gmail.com"&&pass=="1234"){
+             window.location.href="dashboard.html"
+         }
+         else{
+             alert("there is an error robin sigh")
+             return;
+         }
+         }
+
+     </script>
 </body>
 </html>
 
