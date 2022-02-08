@@ -33,20 +33,46 @@
 
     </form>
      <script>
-      
+       
+       var  arrayMail = ["grobin@gmail.com","12@gmail.com","23@gmail.com","34@gmail.com"];
+       var arrayPass=["123","234","456", "789" ];
+     
+
       function myfunction(){
+          console.log("hi bironin")
          var nam=document.forms['log']['userName'].value;
          var maill=document.forms["log"]["userMail"].value;
          var pass=document.forms["log"]["userPassword"].value;
        
-         if (nam=="robin" && maill=="grobin578@gmail.com"&&pass=="1234"){
-             window.location.href="dashboard.html"
+         for(i=0 ;i<=4 ;i++){
+            console.log("hi in for loop")
+           if ((arrayMail[i]==maill) && (arrayPass[i]==pass)){
+               window.location.href="dashboard.html"
+               console.log("hi in if else")
+               break;
+           }
+           else{
+               alert("invalid values");
+               break;
+           }
+
+
          }
-         else{
-             alert("there is an error robin sigh")
-             return;
          }
-         }
+
+    //   function myfunction(){
+    //      var nam=document.forms['log']['userName'].value;
+    //      var maill=document.forms["log"]["userMail"].value;
+    //      var pass=document.forms["log"]["userPassword"].value;
+       
+    //      if (nam=="robin" && maill=="grobin578@gmail.com"&&pass=="1234"){
+    //          window.location.href="dashboard.html"
+    //      }
+    //      else{
+    //          alert("there is an error robin sigh")
+    //          return;
+    //      }
+    //      }
 
      </script>
 </body>
